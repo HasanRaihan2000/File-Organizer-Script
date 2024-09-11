@@ -52,7 +52,7 @@ while true; do
                 *.exe)
                     echo "Moving .exe file $file to $exe_dir"
                     mv "$file" "$exe_dir"
-                    ;;S
+                    ;;
             esac
         fi
     done
