@@ -10,6 +10,7 @@ ppt_dir="C:\Users\hasan\Desktop\Files\Document Files\PPT"
 txt_dir="C:\Users\hasan\Desktop\Files\Document Files\TXT"
 execl_dir="C:\Users\hasan\Desktop\Files\Document Files\EXCEL"
 zip_dir="C:\Users\hasan\Desktop\Files\ZIP"
+exe_dir="C:\Users\hasan\Desktop\Files\Installation"
 
 while true; do
     files_found=0
@@ -48,6 +49,10 @@ while true; do
                     echo "Moving Pdf file $file to $pdf_dir"
                     mv "$file" "$pdf_dir"
                     ;;
+                *.exe)
+                    echo "Moving .exe file $file to $exe_dir"
+                    mv "$file" "$exe_dir"
+                    ;;S
             esac
         fi
     done
